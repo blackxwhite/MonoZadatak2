@@ -1,0 +1,52 @@
+﻿@model PagedList.IPagedList<Project.Service.ViewModels.ViewVehicleMake>
+@using PagedList.Mvc;
+<link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm("Index", "VehicleMakes", FormMethod.Get))
+{
+    <p>
+        Find: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string)
+        <input type="submit" value="Search" />
+    </p>
+}
+<table class="table">
+    <tr>
+        <th>
+            @Html.ActionLink("Name", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
+        </th>
+        <th>
+            @Html.ActionLink("Abrv", "Index", new { sortOrder = ViewBag.AbrvSortParm, currentFilter = ViewBag.CurrentFilter })
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.VehicleMakeName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VehicleMakeAbrv)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.VehicleMakeId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.VehicleMakeId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.VehicleMakeId })
+        </td>
+    </tr>
+}
+
+</table>
+<br />
+Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber) of @Model.PageCount
+@Html.PagedListPager(Model, page => Url.Action("Index",
+    new { page, sortOrder = Request["sortOrder"], currentFilter = ViewBag.CurrentFilter }))

@@ -1,0 +1,34 @@
+﻿@model Project.Service.ViewModels.ViewVehicleMake
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>VehicleMake</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VehicleMakeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VehicleMakeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VehicleMakeAbrv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VehicleMakeAbrv)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VehicleMakeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

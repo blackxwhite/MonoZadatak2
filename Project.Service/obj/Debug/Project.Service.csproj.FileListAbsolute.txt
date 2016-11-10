@@ -1,0 +1,16 @@
+c:\users\josip\documents\visual studio 2015\Projects\Mono_Zadatak2\Project.Service\bin\Debug\Project.Service.dll.config
+c:\users\josip\documents\visual studio 2015\Projects\Mono_Zadatak2\Project.Service\bin\Debug\Project.Service.dll
+c:\users\josip\documents\visual studio 2015\Projects\Mono_Zadatak2\Project.Service\bin\Debug\Project.Service.pdb
+c:\users\josip\documents\visual studio 2015\Projects\Mono_Zadatak2\Project.Service\bin\Debug\EntityFramework.dll
+c:\users\josip\documents\visual studio 2015\Projects\Mono_Zadatak2\Project.Service\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\josip\documents\visual studio 2015\Projects\Mono_Zadatak2\Project.Service\bin\Debug\PagedList.dll
+c:\users\josip\documents\visual studio 2015\Projects\Mono_Zadatak2\Project.Service\bin\Debug\PagedList.Mvc.dll
+c:\users\josip\documents\visual studio 2015\Projects\Mono_Zadatak2\Project.Service\bin\Debug\EntityFramework.xml
+c:\users\josip\documents\visual studio 2015\Projects\Mono_Zadatak2\Project.Service\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\josip\documents\visual studio 2015\Projects\Mono_Zadatak2\Project.Service\bin\Debug\PagedList.xml
+c:\users\josip\documents\visual studio 2015\Projects\Mono_Zadatak2\Project.Service\bin\Debug\PagedList.Mvc.xml
+c:\users\josip\documents\visual studio 2015\Projects\Mono_Zadatak2\Project.Service\obj\Debug\Project.Service.csprojResolveAssemblyReference.cache
+c:\users\josip\documents\visual studio 2015\Projects\Mono_Zadatak2\Project.Service\obj\Debug\Project.Service.dll
+c:\users\josip\documents\visual studio 2015\Projects\Mono_Zadatak2\Project.Service\obj\Debug\Project.Service.pdb
+C:\Users\Josip\documents\visual studio 2015\Projects\Mono_Zadatak2\Project.Service\bin\Debug\AutoMapper.dll
+C:\Users\Josip\documents\visual studio 2015\Projects\Mono_Zadatak2\Project.Service\bin\Debug\AutoMapper.xml

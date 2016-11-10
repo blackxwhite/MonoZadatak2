@@ -1,0 +1,40 @@
+﻿@model Project.Service.ViewModels.ViewVehicleMake
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>VehicleMake</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.VehicleMakeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VehicleMakeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VehicleMakeAbrv)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VehicleMakeAbrv)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
